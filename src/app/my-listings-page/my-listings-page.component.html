@@ -1,3 +1,9 @@
+<mat-card-title>My Listings</mat-card-title>
+<mat-card-header class="btns">
+    <a routerLink="/new-listing">
+        <button mat-button class="btn">Create New Listing</button>
+    </a>
+</mat-card-header>
 <mat-list *ngFor="let listing of listings" class="list-items">
     <mat-list-item>
         <h2>{{listing.name}}</h2>
