@@ -1,1 +1,13 @@
-<p>listing-detail-page works!</p>
+<mat-card-header class="btns">
+    <a routerLink="/listings" class="btn">
+        <button mat-button>Back</button>
+    </a>
+    <a routerLink="/contact/{{listing?.id}}" class="btn">
+        <button mat-button>Contact Seller</button>
+    </a>
+</mat-card-header>
+<mat-card-content class="content">
+    <h2>{{listing?.name}}</h2>
+    <p><i>{{listing?.description}}</i></p>
+    <p>${{listing?.price}}</p>
+</mat-card-content>

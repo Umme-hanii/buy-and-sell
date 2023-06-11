@@ -1,9 +1,7 @@
-<mat-card class="listings">
-    <mat-list *ngFor="let listing of listings">
-        <mat-list-item class="list-item">
-            <a class="no-decor" routerLink="/listings/{{listing.id}}">
-                <h3>{{listing.name}} - ${{listing.price}}</h3>
-            </a>
-        </mat-list-item>
-    </mat-list>
-</mat-card>
+<mat-list *ngFor="let listing of listings">
+    <mat-list-item class="list-item">
+        <a class="no-decor" routerLink="/listings/{{listing.id}}">
+            <h3>{{listing.name}} - ${{listing.price}}</h3>
+        </a>
+    </mat-list-item>
+</mat-list>

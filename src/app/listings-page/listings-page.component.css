@@ -1,9 +1,5 @@
-.listings {
-    margin-bottom: 8px;
-    text-align: center;
-}
 .list-item {
-    background-color: lightgray;
+    background-color: aliceblue;
     margin: 2rem;
     width: auto;
     border-radius: 0.3rem;
