@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
@@ -13,7 +14,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { EditListingPageComponent } from './edit-listing-page/edit-listing-page.component';
 import { MyListingsPageComponent } from './my-listings-page/my-listings-page.component';
 import { NewListingPageComponent } from './new-listing-page/new-listing-page.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ListingDataFormComponent } from './listing-data-form/listing-data-form.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContactPageComponent,
     EditListingPageComponent,
     MyListingsPageComponent,
-    NewListingPageComponent
+    NewListingPageComponent,
+    ListingDataFormComponent
   ],
   imports: [
     BrowserModule,

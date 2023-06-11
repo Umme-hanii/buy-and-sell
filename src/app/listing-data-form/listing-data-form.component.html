@@ -1,0 +1,23 @@
+<form (ngSubmit)="onButtonClicked()">
+    <p>
+        <mat-form-field>
+            <mat-label>Listing Name</mat-label>
+            <input matInput name="name" [(ngModel)]="name" required>
+        </mat-form-field>
+    </p>    
+    <mat-form-field>
+        <mat-label>Listing Description</mat-label>
+        <textarea matInput name="description" [(ngModel)]="description" rows="3" cols="5">
+        </textarea>
+    </mat-form-field>
+    <p>
+        <mat-form-field>
+            <mat-label>Listing Name</mat-label>
+            <input matInput name="price" [(ngModel)]="price">
+        </mat-form-field>
+    </p>
+    <mat-card-actions class="btns">
+        <button mat-button class="btn" type="submit">{{buttonText}}</button>
+    </mat-card-actions>
+</form>
+

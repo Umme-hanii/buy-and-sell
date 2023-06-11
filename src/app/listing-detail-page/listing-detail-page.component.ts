@@ -9,12 +9,12 @@ import { fakeListings } from '../fake-data';
   styleUrls: ['./listing-detail-page.component.css']
 })
 export class ListingDetailPageComponent implements OnInit{
-  listing: Listing | undefined
+  listing!: Listing
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id')
-    this.listing =  fakeListings.find(listing => listing.id === id)
+    this.listing =  fakeListings.find(listing => listing.id === id)!
   }
 }
