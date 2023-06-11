@@ -1,1 +1,17 @@
-<p>my-listings-page works!</p>
+<mat-list *ngFor="let listing of listings" class="list-items">
+    <mat-list-item>
+        <h2>{{listing.name}}</h2>
+    </mat-list-item>
+    <mat-list-item>
+        <p><i>{{listing.description}}</i></p>
+    </mat-list-item>
+    <mat-list-item>
+        <p>${{listing.price}}</p>
+    </mat-list-item>
+    <span class="btns">
+        <a routerLink="/edit-listing/{{listing.id}}">
+            <button mat-button class="btn">Edit</button>
+        </a>
+        <button mat-button class="btn" (click)="onDeleteClicked(listing.id)">Delete</button>
+    </span>
+</mat-list>
