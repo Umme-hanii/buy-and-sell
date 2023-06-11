@@ -1,3 +1,17 @@
+<mat-toolbar class="nav">
+    <a routerLink="listings">
+        <mat-icon>home</mat-icon>
+    </a>
+    <h2 class="remove-margin">Buy and Sell</h2>
+    <span>
+        <a routerLink="/new-listing">
+            <button mat-button class="btn">New Listing</button>
+        </a>
+        <a routerLink="/my-listings">
+            <button mat-button class="btn">My Listings</button>
+        </a>
+    </span>
+</mat-toolbar>
 <mat-card class="listings">
     <router-outlet></router-outlet>
 </mat-card>

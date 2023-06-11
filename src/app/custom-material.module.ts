@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core'
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatCardModule } from '@angular/material/card'
 import { MatFormFieldModule } from '@angular/material/form-field'
-import { MatButtonModule, MatIconButton } from '@angular/material/button'
+import { MatButtonModule } from '@angular/material/button'
 import { MatInputModule } from '@angular/material/input'
 import { MatListModule } from '@angular/material/list'
+import { MatIcon, MatIconModule } from '@angular/material/icon'
 
 @NgModule({
   imports: [
@@ -14,6 +15,8 @@ import { MatListModule } from '@angular/material/list'
     MatInputModule,
     MatButtonModule,
     MatListModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   exports: [
     MatToolbarModule,
@@ -21,7 +24,9 @@ import { MatListModule } from '@angular/material/list'
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatListModule
+    MatListModule,
+    MatToolbarModule,
+    MatIconModule
   ]
 })
 export class CustomMaterialModule {}

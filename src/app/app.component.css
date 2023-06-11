@@ -6,3 +6,10 @@
     margin: auto;
     margin-top: 4rem;
 }
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+.remove-margin {
+    margin-bottom: 0;
+}
